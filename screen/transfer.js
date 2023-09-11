@@ -42,64 +42,30 @@ const transfer =()=>{
         )
     }
     function renderFav(){
-        const bank=[
-            {
-                id: 1,
-                name: "scb",
-                image: images.scb,
-            },
-            {
-                id: 2,
-                name: "kbank",
-                image: images.kbank,
-            },
-            {
-                id: 3,
-                name: "ibank",
-                image: images.ibank,
-            },
-            {
-                id: 4,
-                name: "aomsin",
-                image: images.aomsin,
-            },
-            {
-                id: 5,
-                name: "krungsri",
-                image: images.krungsri,
-            },
-            {
-                id: 6,
-                name: "tgs",
-                image: images.tgs,
-            },
-            {
-                id: 7,
-                name: "uob",
-                image: images.uob,
-            },
-        ]
+
         return(
-            <View style={{padding:SIZES.padding*1.5}}>
-                <Text style={{fontSize:24,color:'#000'}}>จดจำ</Text> 
-                <Image
-                    source={require("../assets/images/image_fav.png")}
-                    resizeMode='contain'
-                    style={{
-                        width:380,
-                        height:100
-                    }}/>
-                <View style={{marginLeft:80,alignItems:'center',justifyContent:'center',width:200,height:200,borderRadius:100,backgroundColor:'#E1F1FF'}}>
-                <Text style={{fontSize:14,color:'#000'}}>ยอดเงินคงเหลือ</Text>
-                <Text style={{fontSize:50,color:'#000'}}>1000</Text>
+            <View style={{padding:25}}>
+                <View style={{marginLeft:80,alignItems:'center',justifyContent:'center',width:210,height:210,borderRadius:110,backgroundColor:'#73768D',marginTop:30}}>
+                <View style={{alignItems:'center',justifyContent:'center',width:200,height:200,borderRadius:100,backgroundColor:'#E1F1FF',}}>
+                <Text style={{fontSize:16,color:'#000'}}>ยอดเงินคงเหลือ</Text>
+                <Text style={{fontSize:50,color:'#000'}}>1,000</Text>
                 </View>
-                <View >
+                </View>
+                <View  
+                 style={{padding:15,
+                 flexDirection:'row',
+                 width:50,
+                 height:50,
+                 marginLeft:155,
+                 justifyContent:'center'}}
+                 >
+                <View>
                 <TouchableOpacity
                     style={{
-                        flex:2,
+                        padding:15,
+                        flexDirection:'row',
                         width:50,
                         width:50,
-                        paddingLeft:SIZES.padding*2,
                         justifyContent:'center'
                     }}
                     //onPress={()=> navigation.numberbun}
@@ -108,11 +74,207 @@ const transfer =()=>{
                     source={images.scb} 
                     resizeMode='contain'
                     style={{
-                        width:70,
-                        height:70
+                        width:80,
+                        height:80
                     }}
                     />
                 </TouchableOpacity>
+                </View>
+                <View>
+                <TouchableOpacity
+                    style={{
+                        padding:15,
+                        marginLeft:45,
+                        flexDirection:'row',
+                        width:50,
+                        width:50,
+                        justifyContent:'center'
+                    }}
+                    //onPress={()=> navigation.numberbun}
+                >  
+                    <Image
+                    source={images.kbank} 
+                    resizeMode='contain'
+                    style={{
+                        width:80,
+                        height:80
+                    }}
+                    />
+                </TouchableOpacity>
+                </View>
+                <View>
+                <TouchableOpacity
+                    style={{
+                        padding:15,
+                        marginLeft:45,
+                        flexDirection:'row',
+                        width:50,
+                        width:50,
+                        justifyContent:'center'
+                    }}
+                    //onPress={()=> navigation.numberbun}
+                >  
+                    <Image
+                    source={images.ktb} 
+                    resizeMode='contain'
+                    style={{
+                        width:80,
+                        height:80
+                    }}
+                    />
+                </TouchableOpacity>
+                </View>
+                <View>
+                <TouchableOpacity
+                    style={{
+                        padding:15,
+                        marginLeft:45,
+                        flexDirection:'row',
+                        width:50,
+                        width:50,
+                        justifyContent:'center'
+                    }}
+                    //onPress={()=> navigation.numberbun}
+                >  
+                    <Image
+                    source={images.ibank} 
+                    resizeMode='contain'
+                    style={{
+                        width:80,
+                        height:80
+                    }}
+                    />
+                </TouchableOpacity>
+                </View>
+                </View>
+                <View  
+                 style={{
+                 padding:15,
+                 marginTop:50,
+                 flexDirection:'row',
+                 width:50,
+                 height:50,
+                 marginLeft:155,
+                 justifyContent:'center'}}
+                 >
+                <View>
+                <TouchableOpacity
+                    style={{
+                        padding:15,
+                        flexDirection:'row',
+                        width:50,
+                        width:50,
+                        justifyContent:'center'
+                    }}
+                    //onPress={()=> navigation.numberbun}
+                >  
+                    <Image
+                    source={images.aomsin} 
+                    resizeMode='contain'
+                    style={{
+                        width:80,
+                        height:80
+                    }}
+                    />
+                </TouchableOpacity>
+                </View>
+                <View>
+                <TouchableOpacity
+                    style={{
+                        padding:15,
+                        marginLeft:45,
+                        flexDirection:'row',
+                        width:50,
+                        width:50,
+                        justifyContent:'center'
+                    }}
+                    //onPress={()=> navigation.numberbun}
+                >  
+                    <Image
+                    source={images.krungsri} 
+                    resizeMode='contain'
+                    style={{
+                        width:80,
+                        height:80
+                    }}
+                    />
+                </TouchableOpacity>
+                </View>
+                <View>
+                <TouchableOpacity
+                    style={{
+                        padding:15,
+                        marginLeft:45,
+                        flexDirection:'row',
+                        width:50,
+                        width:50,
+                        justifyContent:'center'
+                    }}
+                    //onPress={()=> navigation.numberbun}
+                >  
+                    <Image
+                    source={images.ttb} 
+                    resizeMode='contain'
+                    style={{
+                        width:80,
+                        height:80
+                    }}
+                    />
+                </TouchableOpacity>
+                </View>
+                <View>
+                <TouchableOpacity
+                    style={{
+                        padding:15,
+                        marginLeft:45,
+                        flexDirection:'row',
+                        width:50,
+                        width:50,
+                        justifyContent:'center'
+                    }}
+                    //onPress={()=> navigation.numberbun}
+                >  
+                    <Image
+                    source={images.tgs} 
+                    resizeMode='contain'
+                    style={{
+                        width:80,
+                        height:80
+                    }}
+                    />
+                </TouchableOpacity>
+                </View>
+                </View>
+                <View  
+                 style={{padding:15,
+                 flexDirection:'row',
+                 width:50,
+                 height:50,
+                 marginLeft:10,
+                 justifyContent:'center'}}
+                 >
+                <View>
+                <TouchableOpacity
+                    style={{
+                        padding:15,
+                        flexDirection:'row',
+                        width:50,
+                        width:50,
+                        marginTop:50,
+                        justifyContent:'center'
+                    }}
+                    //onPress={()=> navigation.numberbun}
+                >  
+                    <Image
+                    source={images.uob} 
+                    resizeMode='contain'
+                    style={{
+                        width:80,
+                        height:80
+                    }}
+                    />
+                </TouchableOpacity>
+                </View>
                 </View>
                 
             </View>
