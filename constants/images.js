@@ -7,7 +7,6 @@ const uob = require("../assets/images/image_UOB.png");
 const aomsin = require("../assets/images/image_Aomsin.png");
 const ktb = require("../assets/images/image_KTB.png");
 const tgs = require("../assets/images/image_TGS.png");
-
 export default{
     scb,
     kbank,
